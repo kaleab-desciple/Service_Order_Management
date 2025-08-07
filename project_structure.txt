@@ -1,0 +1,56 @@
+📁back-end
+  ├── 📄 app.js                # Express app setup
+  ├── 📄 server.js             # Starts the server
+  ├── 📁 config
+  │   ├── 📄 database.js       # Database configuration
+  │   └── ...                  # Other configurations
+  ├── 📁 controllers
+  │   ├── 📄 customer.js       # Handles customer CRUD operations
+  │   ├── 📄 employee.js       # Handles employee CRUD operations
+  │   ├── 📄 serviceOrder.js   # Manages service order CRUD, assignments, and status updates
+  │   ├── 📄 report.js         # Generates reports and dashboard data
+  │   └── ...
+  ├── 📁 middleware
+  │   ├── 📄 auth.js           # Simple admin authentication
+  │   ├── 📄 logger.js         # Request logging
+  │   ├── 📄 upload.js         # Handles file uploads for attachments
+  │   ├── 📄 errorHandler.js   # Centralized error handling
+  │   └── ...
+  ├── 📁 models
+  │   ├── 📄 customer.js       # Customer schema
+  │   ├── 📄 employee.js       # Employee schema
+  │   ├── 📄 serviceOrder.js   # Service order schema with status and recurrence
+  │   ├── 📄 attachment.js     # Attachment schema for documents/photos/voice notes
+  │   ├── 📄 recurringOrder.js       
+  │   ├── 📄 attachment.js     
+  │   ├── 📄 serviceOrderAssignment.js       
+  │   ├── 📄 serviceOrderItem.js       
+  │   ├── 📄 serviceOrderStatusHistory.js       
+  │   └── ...
+  ├── 📁 routes
+  │   ├── 📄 api.js            # Main API router
+  │   ├── 📄 authRoutes.js     # Authentication endpoints (e.g., login)
+  │   ├── 📄 customerRoutes.js # Customer-related endpoints
+  │   ├── 📄 employeeRoutes.js # Employee-related endpoints
+  │   ├── 📄 serviceOrderRoutes.js # Service order endpoints
+  │   ├── 📄 reportRoutes.js   # Report and dashboard endpoints
+  │   └── ...
+  ├── 📁 services
+  │   ├── 📄 customerService.js    # Customer business logic
+  │   ├── 📄 employeeService.js    # Employee business logic
+  │   ├── 📄 serviceOrderService.js # Service order logic (e.g., status tracking, assignments)
+  │   ├── 📄 reportService.js      # Report generation logic
+  │   └── ...
+  ├── 📁 utils
+  │   ├── 📄 constants.js      # Constants like status values
+  │   ├── 📄 db.js             # Raw queries and transactions
+  │   ├── 📄 enums.js          # Shared enums (e.g., service order statuses)
+  │   ├── 📄 formatter.js      # Response formatting
+  │   ├── 📄 pagination.js     # Pagination utilities
+  │   ├── 📄 validation.js     # Input validation functions
+  │   └── ...
+  ├── 📁 public
+  │   └── 📁 uploads           # Storage for uploaded attachments
+  ├── 📁 node_modules          # Dependencies (not committed)
+  ├── 📄 .env                  # Environment variables
+  └── 📄 package.json          # Project dependencies and scripts

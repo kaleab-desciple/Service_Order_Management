@@ -1,0 +1,23 @@
+{
+  "message": "Customers fetched successfully",
+  "customers": [
+    {
+      "name": "John",
+      "email": "john@example.com",
+      "phone": "123-456-7890",
+      "company": "Doe Industries",
+      "createdAt": "2025-07-30T10:42:18.000Z",
+      "serviceOrders": [
+        { "serviceType": "Calibration", "status": "new" },
+        { "serviceType": "Calibration", "status": "new" },
+        { "serviceType": "Calibration", "status": "new" },
+        { "serviceType": "Calibration", "status": "new" },
+        { "serviceType": "Calibration", "status": "new" },
+        { "serviceType": "Calibration", "status": "new" },
+        { "serviceType": "Calibration", "status": "new" },
+        { "serviceType": "Calibration", "status": "new" }
+      ]
+    }
+  ],
+  "pagination": { "total": 8, "page": 1, "limit": 10, "totalPages": 1 }
+}
